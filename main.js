@@ -515,7 +515,7 @@ function stationJson() {
 	});
 }
 function getTime() {
-	return moment().locale('zh-cn').format('YYYY-MM-DD HH:mm:ss');
+	return moment().utc().zone(-8).format('YYYY-MM-DD HH:mm:ss');
 }
 
 
