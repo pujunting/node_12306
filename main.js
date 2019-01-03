@@ -201,7 +201,7 @@ fs.readFile('config.json', 'utf-8', function (err, data) {
 			answer.ticket_type = answer.ticket_type ? '0x00' : 'ADULT';
 			answer.receive_mail = answer.receive_mail || answer.your_mail;
 			config = answer;
-			fs.writeFile('config.json', JSON.stringify(config));
+			fs.writeFileSync('config.json', JSON.stringify(config));
 			var rule = new schedule.RecurrenceRule();
 			rule.second = [0];
 			getLeftTicketUrl((data) => {
