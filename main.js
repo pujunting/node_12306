@@ -10,6 +10,7 @@ const scanf = require('scanf');
 const program = require('commander');
 const UA = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36";
 const inquirer = require('inquirer');
+const moment = require('moment');
 let $;
 var config = {};
 var prompt = inquirer.createPromptModule();
@@ -514,8 +515,7 @@ function stationJson() {
 	});
 }
 function getTime() {
-	let T = new Date();
-	return T.getFullYear() + '-' + (parseInt(T.getMonth()) + 1) + '-' + T.getDate() + ' ' + T.getHours() + ":" + T.getMinutes() + ":" + T.getSeconds();
+	return moment().locale('zh-cn').format('YYYY-MM-DD HH:mm:ss');
 }
 
 

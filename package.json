@@ -9,13 +9,14 @@
   "author": "hongrunhui",
   "license": "ISC",
   "devDependencies": {
-    "nodemailer": "*",
-    "node-schedule": "*"
+    "node-schedule": "*",
+    "nodemailer": "*"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "commander": "^2.9.0",
     "inquirer": "^4.0.1",
+    "moment": "^2.23.0",
     "request": "^2.83.0",
     "scanf": "^0.7.3",
     "webpage": "^0.3.0"
